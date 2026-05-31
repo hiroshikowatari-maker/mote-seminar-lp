@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>告白する側から、告白される側へ。｜モテで人生激変セミナー</title>
+<meta name="description" content="モテたい男性のための無料リアルセミナー。『告白する側から、告白される側へ』人生を変える、モテの本質を学ぶ。名古屋駅徒歩5分で開催。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0a1f44;
+  --navy-deep: #050f24;
+  --blue: #1e5bb8;
+  --blue-light: #3b82f6;
+  --blue-pale: #eef4fc;
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-300: #cbd5e1;
+  --gray-500: #64748b;
+  --gray-700: #334155;
+  --gold: #c8a45c;
+  --gold-light: #e3c989;
+  --serif: "Shippori Mincho", "游明朝", "Yu Mincho", serif;
+  --sans: "Zen Kaku Gothic New", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  font-weight: 400;
+  color: var(--navy);
+  background: var(--white);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.02em;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ===================== HERO ===================== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 70%, var(--blue) 100%);
+  color: var(--white);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 80px 24px 60px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(59,130,246,0.25), transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(200,164,92,0.12), transparent 50%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeUp 1.2s ease-out;
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.4em;
+  color: var(--gold-light);
+  margin-bottom: 32px;
+  padding: 8px 24px;
+  border: 1px solid rgba(200,164,92,0.4);
+  border-radius: 2px;
+}
+
+.hero__title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  line-height: 1.35;
+  margin-bottom: 32px;
+  letter-spacing: 0.04em;
+}
+
+.hero__title .accent {
+  color: var(--gold-light);
+  display: inline-block;
+  position: relative;
+}
+
+.hero__title .accent::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold);
+  animation: lineDraw 1.5s ease-out 0.6s both;
+  transform-origin: left;
+}
+
+.hero__subtitle {
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 48px;
+  color: rgba(255,255,255,0.85);
+}
+
+.hero__subtitle strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.hero__info {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 24px 40px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.12);
+  margin-bottom: 48px;
+  border-radius: 4px;
+}
+
+.hero__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.hero__info-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-light);
+}
+
+.hero__info-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.cta {
+  display: inline-block;
+  background: var(--white);
+  color: var(--navy);
+  padding: 22px 64px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.cta::after {
+  content: "→";
+  margin-left: 16px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+}
+
+.cta:hover::after {
+  transform: translateX(6px);
+}
+
+.cta--inverse {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.cta--inverse:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+.hero__scroll::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.4);
+  margin: 12px auto 0;
+}
+
+/* ===================== SECTIONS ===================== */
+.section {
+  padding: 120px 24px;
+  position: relative;
+}
+
+.section__inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section__label {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.4em;
+  color: var(--blue);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.section__title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  line-height: 1.5;
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+
+.section__title .br-line {
+  display: block;
+}
+
+.section__intro {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--gray-700);
+  margin-bottom: 60px;
+  max-width: 720px;
+}
+
+/* ===================== EMPATHY ===================== */
+.empathy {
+  background: var(--off-white);
+}
+
+.empathy__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--gray-300);
+  border: 1px solid var(--gray-300);
+}
+
+.empathy__item {
+  background: var(--white);
+  padding: 36px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: var(--navy);
+}
+
+.empathy__item::before {
+  content: "□";
+  color: var(--blue);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.empathy__closing {
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  margin-top: 60px;
+  color: var(--navy);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ===================== TEASER (former redefine) ===================== */
+.teaser {
+  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.teaser::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.15), transparent 60%);
+}
+
+.teaser .section__inner { position: relative; z-index: 2; }
+.teaser .section__label { color: var(--gold-light); }
+.teaser .section__title { color: var(--white); }
+.teaser .section__intro { color: rgba(255,255,255,0.8); }
+
+.teaser__questions {
+  margin: 60px 0;
+  display: grid;
+  gap: 24px;
+}
+
+.teaser__q {
+  padding: 32px 36px;
+  background: rgba(255,255,255,0.04);
+  border-left: 3px solid var(--gold-light);
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.8;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.teaser__q-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--gold-light);
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.teaser__statement {
+  margin-top: 48px;
+  padding: 48px 32px;
+  border-top: 1px solid rgba(200,164,92,0.4);
+  border-bottom: 1px solid rgba(200,164,92,0.4);
+  text-align: center;
+}
+
+.teaser__statement-lead {
+  font-size: 0.82rem;
+  letter-spacing: 0.3em;
+  color: var(--gold-light);
+  margin-bottom: 24px;
+}
+
+.teaser__statement-text {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  line-height: 1.6;
+  color: var(--white);
+}
+
+.teaser__statement-text .underline {
+  background: linear-gradient(transparent 65%, rgba(200,164,92,0.4) 65%);
+  padding: 0 4px;
+}
+
+/* ===================== SOLUTION ===================== */
+.solution {
+  background: var(--white);
+}
+
+.solution__lead {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: var(--navy);
+  line-height: 1.8;
+}
+
+.solution__steps {
+  display: grid;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 32px;
+  padding: 40px 36px;
+  background: var(--off-white);
+  border-left: 3px solid var(--blue);
+  align-items: start;
+}
+
+.step__num {
+  font-family: var(--serif);
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--blue);
+  line-height: 1;
+}
+
+.step__num span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+  font-family: var(--sans);
+  font-weight: 500;
+}
+
+.step__content h3 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--navy);
+}
+
+.step__content p {
+  font-size: 0.96rem;
+  line-height: 2;
+  color: var(--gray-700);
+}
+
+.solution__note {
+  margin-top: 48px;
+  padding: 32px;
+  background: var(--blue-pale);
+  border-left: 3px solid var(--blue);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--navy);
+}
+
+.solution__note strong {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ===================== DETAIL ===================== */
+.detail {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.detail .section__label { color: var(--gold-light); }
+.detail .section__title { color: var(--white); }
+
+.detail__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 48px;
+}
+
+.detail__table tr {
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+
+.detail__table tr:first-child {
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.detail__table th,
+.detail__table td {
+  padding: 24px 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.detail__table th {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--gold-light);
+  font-weight: 500;
+  width: 200px;
+  white-space: nowrap;
+}
+
+.detail__table td {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.detail__table td strong {
+  font-size: 1.2rem;
+  color: var(--gold-light);
+}
+
+.program {
+  margin-top: 60px;
+}
+
+.program__title {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(200,164,92,0.4);
+}
+
+.program__list {
+  counter-reset: program;
+  list-style: none;
+}
+
+.program__list li {
+  position: relative;
+  padding: 16px 0 16px 56px;
+  font-size: 0.98rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.9);
+}
+
+.program__list li::before {
+  counter-increment: program;
+  content: "0" counter(program);
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+/* ===================== LECTURERS ===================== */
+.lecturers {
+  background: var(--off-white);
+}
+
+.lecturer {
+  background: var(--white);
+  padding: 48px 40px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  align-items: start;
+  border-top: 3px solid var(--blue);
+}
+
+.lecturer__avatar {
+  width: 180px;
+  height: 180px;
+  background: var(--blue-pale);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 4rem;
+  color: var(--blue);
+  font-weight: 700;
+  position: relative;
+}
+
+.lecturer__avatar::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.lecturer__role {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--blue);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.lecturer__name {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.lecturer__title {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 20px;
+}
+
+.lecturer__bio {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--gray-700);
+}
+
+/* ===================== FUTURE ===================== */
+.future {
+  background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.future .section__label { color: var(--gold-light); }
+.future .section__title { color: var(--white); }
+
+.future__list {
+  list-style: none;
+  margin: 48px auto;
+  max-width: 720px;
+}
+
+.future__list li {
+  font-size: 1.05rem;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  position: relative;
+  padding-left: 32px;
+  text-align: left;
+}
+
+.future__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold-light);
+  font-weight: 700;
+}
+
+.future__closing {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-top: 60px;
+  line-height: 1.7;
+}
+
+.future__closing .accent {
+  color: var(--gold-light);
+}
+
+/* ===================== FAQ ===================== */
+.faq {
+  background: var(--white);
+}
+
+.faq__list {
+  margin-top: 48px;
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--gray-300);
+}
+
+.faq__q {
+  padding: 24px 0;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--navy);
+  list-style: none;
+  position: relative;
+}
+
+.faq__q::-webkit-details-marker { display: none; }
+
+.faq__q::before {
+  content: "Q";
+  font-family: var(--serif);
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.faq__q::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: var(--blue);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+details[open] .faq__q::after {
+  transform: rotate(45deg);
+}
+
+.faq__a {
+  padding: 0 0 24px 36px;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--gray-700);
+}
+
+/* ===================== FINAL CTA ===================== */
+.final-cta {
+  background: var(--navy-deep);
+  color: var(--white);
+  text-align: center;
+  padding: 120px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at center, rgba(59,130,246,0.2), transparent 60%);
+}
+
+.final-cta__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.final-cta__title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.final-cta__title .accent { color: var(--gold-light); }
+
+.final-cta__text {
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 48px;
+  color: rgba(255,255,255,0.85);
+}
+
+.final-cta__warning {
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  margin-top: 24px;
+  letter-spacing: 0.1em;
+}
+
+/* ===================== FORM ===================== */
+.form-section {
+  background: var(--off-white);
+  padding: 120px 24px;
+}
+
+.form-section__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.form-section__title {
+  font-family: var(--serif);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--navy);
+}
+
+.form-section__sub {
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--gray-500);
+  margin-bottom: 48px;
+}
+
+.form-frame {
+  background: var(--white);
+  padding: 40px 32px;
+  border: 1px solid var(--gray-300);
+  border-top: 3px solid var(--blue);
+}
+
+.form-frame iframe {
+  width: 100%;
+  min-height: 800px;
+  border: none;
+}
+
+.form-placeholder {
+  padding: 80px 32px;
+  text-align: center;
+  background: var(--blue-pale);
+  border: 2px dashed var(--blue);
+  color: var(--navy);
+}
+
+.form-placeholder strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--blue);
+}
+
+.form-placeholder code {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.6);
+  padding: 60px 24px 40px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer__brand {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 16px;
+  letter-spacing: 0.1em;
+}
+
+.footer__divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 24px auto;
+}
+
+.footer p { line-height: 1.8; }
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes lineDraw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .section { padding: 80px 20px; }
+
+  .hero { padding: 60px 20px 80px; min-height: auto; }
+  .hero__info { gap: 16px 24px; padding: 20px 24px; }
+  .hero__info-item { text-align: left; }
+  .cta { padding: 20px 40px; font-size: 0.95rem; }
+
+  .empathy__list { grid-template-columns: 1fr; }
+  .empathy__item { padding: 24px; }
+
+  .step { grid-template-columns: 1fr; gap: 16px; padding: 32px 24px; }
+  .step__num { font-size: 2.6rem; }
+
+  .detail__table th, .detail__table td { display: block; width: 100%; }
+  .detail__table th { padding-bottom: 8px; padding-top: 24px; }
+  .detail__table td { padding-top: 0; padding-bottom: 24px; }
+
+  .lecturer {
+    grid-template-columns: 1fr;
+    padding: 36px 28px;
+    text-align: center;
+  }
+  .lecturer__avatar { margin: 0 auto; }
+  .lecturer__bio { text-align: left; }
+
+  .future__list li { font-size: 0.95rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero__inner">
+
+    <h1 class="hero__title">
+      告白される側へ。<br>
+      <span class="accent">人生の主役を、取り戻せ。</span>
+    </h1>
+
+    <p class="hero__subtitle">
+      選ばれる側に立つ。<br>
+      追いかけない、焦らない、自分らしくいるだけで人が集まる。<br>
+      <strong>そんな人生を、ここから始める。</strong>
+    </p>
+
+    <div class="hero__info">
+      <div class="hero__info-item">
+        <span class="hero__info-label">DATE</span>
+        <span class="hero__info-value">2026/6/28(日) 16:00〜17:30</span>
+      </div>
+      <div class="hero__info-item">
+        <span class="hero__info-label">PLACE</span>
+        <span class="hero__info-value">名古屋駅 徒歩5分</span>
+      </div>
+      <div class="hero__info-item">
+        <span class="hero__info-label">FEE</span>
+        <span class="hero__info-value">無料</span>
+      </div>
+    </div>
+
+    <div>
+      <a href="#apply" class="cta">セミナーに申し込む</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll">SCROLL</div>
+</section>
+
+<!-- ===================== EMPATHY ===================== -->
+<section class="section empathy">
+  <div class="section__inner">
+    <span class="section__label">PROBLEM</span>
+    <h2 class="section__title">
+      こんな悩み、<br class="br-line">
+      抱えていませんか?
+    </h2>
+    <p class="section__intro">
+      ひとつでも当てはまったなら、このセミナーは、あなたのためのものです。
+    </p>
+
+    <div class="empathy__list">
+      <div class="empathy__item">出会いがあっても、いつも自分から動かないと進展しない</div>
+      <div class="empathy__item">「いい人」では終わるけど、恋愛対象には見られない</div>
+      <div class="empathy__item">告白しても振られる。理由もよく分からないまま</div>
+      <div class="empathy__item">服装を変えても、ジムに通っても、何かが変わらない</div>
+      <div class="empathy__item">周りの結婚ラッシュに、焦りだけが募っていく</div>
+      <div class="empathy__item">そもそも、自分のどこを変えればモテるのか分からない</div>
+    </div>
+
+    <p class="empathy__closing">
+      —— その悩み、努力の方向が違うだけです。
+    </p>
+  </div>
+</section>
+
+<!-- ===================== B-2: DIFFERENCE (他のモテ講座との違い) ===================== -->
+<section class="section teaser">
+  <div class="section__inner">
+    <span class="section__label">SPECIAL</span>
+    <h2 class="section__title">
+      なぜ、このセミナーは<br class="br-line">
+      特別なのか。
+    </h2>
+    <p class="section__intro">
+      世の中の"モテ講座"の多くは、表面的な対処法を教えます。<br>
+      髪型、服装、トーク術——もちろん大切ですが、<br>
+      それだけで本当に人生が変わった人を、見たことがありますか?
+    </p>
+
+    <div class="teaser__questions">
+      <div class="teaser__q">
+        <span class="teaser__q-label">POINT 01</span>
+        <strong style="color: var(--gold-light); font-weight:700;">テクニックではなく、本質を扱う。</strong><br>
+        小手先の方法論ではなく、"モテる"の根本にアプローチします。
+      </div>
+      <div class="teaser__q">
+        <span class="teaser__q-label">POINT 02</span>
+        <strong style="color: var(--gold-light); font-weight:700;">恋愛だけの話で終わらない。</strong><br>
+        ここで得る気づきは、仕事・人間関係・人生そのものに波及していきます。
+      </div>
+      <div class="teaser__q">
+        <span class="teaser__q-label">POINT 03</span>
+        <strong style="color: var(--gold-light); font-weight:700;">ロジカルに、シンプルに。</strong><br>
+        感情論や精神論ではなく、誰もが納得できる構造で"モテ"を解き明かします。
+      </div>
+    </div>
+
+    <div class="teaser__statement">
+      <div class="teaser__statement-lead">— BOTTOM LINE —</div>
+      <div class="teaser__statement-text">
+        ここでしか出会えない、<br>
+        <span class="underline">人生を変える90分を。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOLUTION (Step構成、スライド準拠) ===================== -->
+<section class="section solution">
+  <div class="section__inner">
+    <span class="section__label">SOLUTION</span>
+    <h2 class="section__title">
+      セミナーで<br class="br-line">
+      お伝えする3つのこと。
+    </h2>
+    <p class="solution__lead">
+      90分間で、モテの本質を<br>
+      ロジカルに、シンプルに、お伝えします。
+    </p>
+
+    <div class="solution__steps">
+      <div class="step">
+        <div class="step__num">
+          <span>POINT</span>
+          01
+        </div>
+        <div class="step__content">
+          <h3>そもそも「モテ」とは、何か。</h3>
+          <p>
+            あなたが今まで信じてきた"モテ"の定義は、本当に正しいのか。多くの人が見落としている、モテの本質を最初に明らかにします。ここを押さえないと、何をやっても遠回りになります。
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step__num">
+          <span>POINT</span>
+          02
+        </div>
+        <div class="step__content">
+          <h3>モテるために、本当に必要なもの。</h3>
+          <p>
+            年収でも、ルックスでも、トーク力でもない。"告白される側"の人間が共通して持っている、ある決定的な要素。それが何なのかを、具体的にお伝えします。
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step__num">
+          <span>POINT</span>
+          03
+        </div>
+        <div class="step__content">
+          <h3>それを、どう手に入れるか。</h3>
+          <p>
+            必要なものがわかっても、手に入れる方法がわからなければ意味がありません。明日から動き出せる、具体的なアプローチをお持ち帰りいただきます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DETAIL ===================== -->
+<section class="section detail">
+  <div class="section__inner">
+    <span class="section__label">DETAILS</span>
+    <h2 class="section__title">セミナー概要</h2>
+
+    <table class="detail__table">
+      <tr>
+        <th>THEME</th>
+        <td>告白する側から、告白される側へ。<br>モテで人生激変セミナー</td>
+      </tr>
+      <tr>
+        <th>DATE</th>
+        <td>2026年6月28日(日) 16:00〜17:30</td>
+      </tr>
+      <tr>
+        <th>PLACE</th>
+        <td>会議室 IFs 名古屋<br>〒453-0015 愛知県名古屋市中村区椿町19-7<br>チサンマンション椿町 505号室<br><span style="font-size:0.85em; opacity:0.7;">(名古屋駅 徒歩5分)</span></td>
+      </tr>
+      <tr>
+        <th>FEE</th>
+        <td><strong>無料</strong></td>
+      </tr>
+      <tr>
+        <th>CAPACITY</th>
+        <td>8名(先着順)</td>
+      </tr>
+      <tr>
+        <th>ITEMS</th>
+        <td>飲み物</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== FUTURE ===================== -->
+<section class="section future">
+  <div class="section__inner">
+    <span class="section__label">YOUR FUTURE</span>
+    <h2 class="section__title">
+      セミナー参加後、<br class="br-line">
+      あなたはこう変わります。
+    </h2>
+
+    <ul class="future__list">
+      <li>"モテ"の本当の意味を理解し、迷いがなくなる</li>
+      <li>何を磨けばいいかが明確になり、行動の方向が定まる</li>
+      <li>「追いかける恋愛」から「選ばれる恋愛」へ、視点が切り替わる</li>
+      <li>自分の中に眠っていた可能性に気づき、揺るぎない自信が芽生える</li>
+      <li>周りに振り回されず、自分の人生の主役として歩み始める</li>
+    </ul>
+
+    <p class="future__closing">
+      告白する側から、<br>
+      <span class="accent">告白される側へ。</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section faq">
+  <div class="section__inner">
+    <span class="section__label">FAQ</span>
+    <h2 class="section__title">よくあるご質問</h2>
+
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary class="faq__q">恋愛経験が少なくても、参加して大丈夫ですか?</summary>
+        <div class="faq__a">大丈夫です。むしろ「これからどうすればいいか分からない」方にこそ、参加してほしいセミナーです。経験の多寡ではなく、これから変わりたいという気持ちがあれば、得られるものは大きいはずです。</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">年齢制限はありますか?</summary>
+        <div class="faq__a">特に設けていません。"モテたい"という思いを持つ方なら、年齢に関係なくご参加いただけます。</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">強引な勧誘はありませんか?</summary>
+        <div class="faq__a">ありません。セミナー末尾で個別相談のご案内はしますが、ご希望者のみが対象です。</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">持ち物はありますか?</summary>
+        <div class="faq__a">飲み物をお持ちください。</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">服装の指定はありますか?</summary>
+        <div class="faq__a">自由です。リラックスできる服装でお越しください。</div>
+      </details>
+
+      <details class="faq__item">
+        <summary class="faq__q">途中で帰ることはできますか?</summary>
+        <div class="faq__a">もちろん可能です。ご都合により途中退席されても、何の問題もありません。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="final-cta">
+  <div class="final-cta__inner">
+    <h2 class="final-cta__title">
+      告白する側から、<br>
+      <span class="accent">告白される側へ。</span><br>
+      最初の一歩を、ここから。
+    </h2>
+    <p class="final-cta__text">
+      参加費は、無料。<br>
+      失うものは、何ひとつありません。<br>
+      得るものは、あなた自身を変える"答え"です。
+    </p>
+    <a href="#apply" class="cta">いますぐ申し込む</a>
+    <p class="final-cta__warning">※ 定員になり次第、締め切らせていただきます</p>
+  </div>
+</section>
+
+<!-- ===================== FORM ===================== -->
+<section class="form-section" id="apply">
+  <div class="form-section__inner">
+    <h2 class="form-section__title">セミナー申込フォーム</h2>
+    <p class="form-section__sub">下記フォームにご記入ください</p>
+
+    <div class="form-frame">
+      <!-- ▼▼▼ Googleフォーム埋め込み箇所 ▼▼▼ -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeoJNqnzEAcTGRbXW5yD4YqIu12OAmpmf__i6wxZGJ5FkROtg/viewform?embedded=true" width="100%" height="1286" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <!-- ▲▲▲ Googleフォーム埋め込み箇所 ▲▲▲ -->
+    </div>
+  </div>
+</section>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.section, .final-cta, .form-section').forEach(el => {
+  el.classList.add('reveal');
+  observer.observe(el);
+});
+</script>
+
+</body>
+</html>
